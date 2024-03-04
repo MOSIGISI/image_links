@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color:white;
+            text-decoration: none;
+        }
+    
+        img {
+            width: 400px; /* Set the width of the images */
+            height: 300px; /* Set the height of the images */
+            object-fit: cover; /* Ensure the aspect ratio is maintained */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our website!</p>
+        <p>Check out the latest in technology:</p>
+        <a href="">
+            <img src="https://files.techmahindra.com/static/img/imagination-age-bg.png" alt="Technology">
+        </a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <a href="https://www.architectureartdesigns.com/wp-content/uploads/2013/04/tumblr_m7oynl386H1qa7gx5o1_500.jpg">
+                <img src="https://www.architectureartdesigns.com/wp-content/uploads/2013/04/tumblr_m7oynl386H1qa7gx5o1_500.jpg" alt="Nature 1">
+            </a>
+            <a href="https://example.com/nature2">
+                <img src="https://timesofindia.indiatimes.com/photo/82763468/82763468.jpg" alt="Nature 2">
+            </a>
+            <a href="https://example.com/nature3">
+                <img src="https://www.natures-images.co.uk/wp-content/uploads/2023/01/Tigers_2024_460.jpg" alt="Nature 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>
+                <a href="https://example.com/food1">
+                    <img src="https://lowcarbafrica.com/wp-content/uploads/2020/11/fufu-IG-1.jpg" alt="Food 1">
+                </a>
+                Fufu
+            </li> <br />
+            <li>
+                <a href="https://example.com/food2">
+                    <img src="https://demandafrica.com/wp-content/uploads/2018/07/Popular-African-Foods-Pap-en-Vleis-Shisa-nyama.jpg" alt="Food 2">
+                </a>
+                Nyama Choma
+            </li> <br />
+            <li>
+                <a href="https://example.com/food3">
+                    <img src="https://res.cloudinary.com/sagacity/image/upload/c_crop,h_1800,w_2400,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/suya_malcolm_nbjt4h.jpg" alt="Food 3">
+                </a>
+                Grilled fish Biryani
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mosigisi Sheilla. All rights reserved.</p>
+    </footer>
+</body>
+</html>
